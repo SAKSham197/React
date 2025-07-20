@@ -32,7 +32,6 @@ function App() {
   ]
   return (
     <div className="App">
-      <p>hello</p>
       <Products items={products}></Products>
     </div>
 
