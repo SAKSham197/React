@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Products from './components/Products';
+import NewProduct from './components/NewProduct';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
   ]
   return (
     <div className="App">
+      <NewProduct/>
       <Products items={products}></Products>
     </div>
 
