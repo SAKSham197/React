@@ -23,9 +23,22 @@ function App() {
           path="/signup"
           element={<Signup setIsLoggedIn={setIsLoggedIn} />}
         />
-        <PrivateRoute isLoggedIn={isLoggedIn}>
+
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute isLoggedIn={isLoggedIn}>
+              <Dashboard/>
+            </PrivateRoute>
+          }
+        />
+
+
+
+
+        {/* <PrivateRoute isLoggedIn={isLoggedIn}>
           <Route path="/dashboard" element={<Dashboard />} />
-        </PrivateRoute>
+        </PrivateRoute> */}
       </Routes>
     </div>
   );
